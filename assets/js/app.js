@@ -1,7 +1,7 @@
 (function () {
   $(document).ready(function() {
     function initSwiperPlans() {
-      let swiper = new Swiper(".plansSwiper", {
+      let swiperPlans = new Swiper(".plansSwiper", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
@@ -9,7 +9,7 @@
         followFinger: false,
         watchOverflow: true,
         spaceBetween: 200,
-        loop: true,
+        loop: false,
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
@@ -30,8 +30,34 @@
           // }
         }
       });
-    }
 
+      let swiperPlansThumb = new Swiper(".plansSwiperThumbnail", {
+        grabCursor: true,
+        slidesPerView: 1,
+        followFinger: false,
+        watchOverflow: true,
+        loop: true,
+        allowTouchMove: false,
+        noSwiping: true
+      });
+      let swiperPlansDetail = new Swiper(".plansSwiperDetail", {
+        grabCursor: true,
+        slidesPerView: 1,
+        followFinger: false,
+        watchOverflow: true,
+        loop: true,
+        allowTouchMove: false,
+        noSwiping: true
+      });
+      // init slideTo
+      swiperPlansThumb.slideTo(swiperPlans.activeIndex)
+      swiperPlansDetail.slideTo(swiperPlans.activeIndex)
+
+      swiperPlans.on('slideChangeTransitionStart', function(){
+        swiperPlansThumb.slideTo(swiperPlans.activeIndex)
+        swiperPlansDetail.slideTo(swiperPlans.activeIndex)
+      });
+    }
 
     let sidebarStatus = false
     $('.burger-button').click(() => {

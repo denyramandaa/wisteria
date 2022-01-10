@@ -10,6 +10,9 @@
 body {
   font-family: Avenir;
 }
+img {
+  width: 100%;
+}
 .font-title {
   font-family: Didot;
 }
@@ -49,6 +52,9 @@ body {
 
 .color-brown-medium {
   color: #95785E;
+}
+.h-fit-content {
+  height: fit-content;
 }
 
 .dropdown-menu {
@@ -114,6 +120,15 @@ body {
 .btn-swiper-next::before {
   left: 0;
   transform: translate(-100%,-50%);
+}
+
+.background-thumb-ratio {
+  width: 100%;
+  padding-bottom: 100%;
+}
+.plans-detail-box {
+  border-radius: 4px;
+  border: 1px solid #95785E;
 }
 
 
