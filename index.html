@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <!-- ntar ini hapus aja, buat nyoba2 doang -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Fixed navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +36,147 @@
               </form>
             </div>
           </div>
-        </nav>
+        </nav> -->
+        <!-- Hendy: Nyoba -->
+        <header class="w-full fixed-top bg-brown-default border-bottom">
+          <div class="container pt-6 pb-6">
+            <div class="row">
+              <div class="col-md-5 col-3 align-items-start align-items-md-center justify-content-start d-flex">
+                <div class="d-md-none">
+                  <img src="assets/img/icon-burger-menu.png" style="width:20px;" alt="burger-icon" class="burger-button">
+                </div>
+                <div class="row align-items-center justify-content-end d-none d-md-flex flex-nowrap">
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Concept
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Location
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Plans
+                    </a>
+                    <div class="dropdown-menu bg-brown-medium px-2" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item text-white border-bottom" href="#">Plot A</a>
+                      <a class="dropdown-item text-white" href="#">Plot B</a>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Facilities
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-6 justify-content-center d-flex">
+                <img src="assets/img/logo.png" style="width: 120px;" alt="logo">
+              </div>
+              <div class="col-md-5 col-3 align-items-start align-items-md-center justify-content-end d-flex">
+                <div class="row align-items-center justify-content-end d-none d-md-flex flex-nowrap">
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Virtual Tour
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Testimony
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Contact
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto ms-4">
+                  <a class="text-white nav-link p-0 dropdown-toggle" href="#" role="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    En
+                  </a>
+                  <div class="dropdown-menu bg-brown-medium px-2" aria-labelledby="langDropdown">
+                    <a class="dropdown-item text-white border-bottom" href="#">En</a>
+                    <a class="dropdown-item text-white" href="#">Id</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar d-md-none position-fixed d-flex">
+              <div class="p-4 bg-brown-lite col-9 justify-content-between d-flex flex-wrap min-vh-100 overflow-auto">
+                <div class="col-12">
+                  <div class="py-3 d-flex justify-content-center">
+                    <img src="assets/img/logo.png" style="width:96px" alt="logo">
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-dark font-weight-bold text-decoration-none">Concept</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-dark font-weight-bold text-decoration-none">Location</a>
+                  </div>
+                  <div>
+                    <a class="text-dark py-3 p-0 dropdown-toggle nav-link font-weight-bold d-flex align-items-center justify-content-between text-decoration-none border-bottom" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div>
+                        Plans
+                      </div>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="py-3 ms-3 border-bottom">
+                        <a href="#" class="text-dark text-decoration-none text-sm">Plan A</a>
+                      </div>
+                      <div class="py-3 ms-3 border-bottom">
+                        <a href="#" class="text-dark text-decoration-none text-sm">Plan B</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3 border-bottom ">
+                    <a href="#" class="text-dark font-weight-bold text-decoration-none">Facilities</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-dark font-weight-bold text-decoration-none">Virtual Tour</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-dark font-weight-bold text-decoration-none">Testimony</a>
+                  </div>
+                  <div class="py-3 border-top">
+                    <a href="#" class="text-dark font-weight-bold text-decoration-none">Contact</a>
+                  </div>
+                </div>
+                <div class="col-12 text-dark font-weight-bold">
+                  <div>
+                    Follow Us
+                  </div>
+                  <div class="pt-2 row">
+                    <img src="assets/img/icon-fb.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-web.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-ig.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-yt.png" class="rounded-circle col-3" alt="facebook">
+                  </div>
+                </div>
+              </div>
+              <div class="px-4 h-100 col-3 burger-button bg-transparent">
+            </div>
+          </div>
         </header>
 
+        <section class="container jumbotron pt-6">
+          <div class="">
+            <div class="row py-5 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+              <img src="assets/img/logo-w.png" style="width:120px;" class="pb-6" alt="w">
+              <div class="fs-2 pb-3 text-center text-lg-start">
+                Home is where love, hope, and dreams starts
+              </div>
+              <div class="text-center text-lg-start">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate.
+              </div>
+            </div>
+            <div class="col-6 d-none d-lg-flex">
+              tempat panah kek nya ini
+            </div>
+          </div>
+        </section>
         <!-- start here -->
     </div>
 	<script
