@@ -161,23 +161,51 @@
           </div>
         </header>
 
-        <section class="container jumbotron pt-6">
-          <div class="">
-            <div class="row py-5 col-lg-6 d-flex justify-content-center justify-content-lg-start">
-              <img src="assets/img/logo-w.png" style="width:120px;" class="pb-6" alt="w">
-              <div class="fs-2 pb-3 text-center text-lg-start">
-                Home is where love, hope, and dreams starts
-              </div>
-              <div class="text-center text-lg-start">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate.
+        <!-- JUMBOTRON -->
+        <section class="mb-5">
+          <section class="col-12 mx-auto position-relative">
+            <div class="swiper jumbotronSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="background-img-ratio min-vh-100" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio min-vh-100" style="background-image: url('https://swiperjs.com/demos/images/nature-2.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio min-vh-100" style="background-image: url('https://swiperjs.com/demos/images/nature-3.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio min-vh-100" style="background-image: url('https://swiperjs.com/demos/images/nature-4.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio min-vh-100" style="background-image: url('https://swiperjs.com/demos/images/nature-5.jpg');"></div>
+                </div>
               </div>
             </div>
-            <div class="col-6 d-none d-lg-flex">
-              tempat panah kek nya ini
+            <div class="d-block position-absolute top-0 w-100 h-100" style="z-index:999;">
+              <div class="d-flex w-100 h-100">
+                <div class="col-lg-6 d-flex align-items-center" style="background:linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);">
+                  <div class="py-5 px-5">
+                    <div class="text-center text-lg-start">
+                      <img src="assets/img/logo-w.png" style="width:120px;" class="pb-6" alt="w">
+                    </div>
+                    <div class="fs-2 pb-3 text-center text-lg-start text-white">
+                      Home is where love, hope, and dreams starts
+                    </div>
+                    <div class="text-center text-lg-start text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-none d-lg-flex">
+                  <div class="btn-swiper-next jumbotronSwiper--next position-absolute d-none d-md-block"><div class="jumbotronSwiper--line position-relative h-100"></div></div>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
         </section>
-        <!-- start here -->
+        <!-- JUMBOTRON -->
 
 
         <!-- PLANS -->
@@ -186,7 +214,7 @@
             <h2 class="font-title color-brown-medium fw-bold">PLANS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
           </section>
-          <section class="col-12 col-md-10 px-3 px-md-0 mx-auto position-relative mb-4">
+          <section class="col-12 col-md-11 px-3 px-md-0 mx-auto position-relative mb-4">
             <div class="swiper plansSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -269,7 +297,7 @@
           <section class="col-12 col-md-6 text-center px-3 px-md-0 mx-auto mb-5">
             <div class="swiper plansSwiperDetail">
               <div class="swiper-wrapper">
-                <div class="swiper-slide text-start">
+                <div class="swiper-slide text-start p-1">
                   <h3 class="font-title color-brown-medium fw-bold">Type A</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                   <div class="plans-detail-box d-flex p-4 flex-wrap flex-md-nowrap">
@@ -334,7 +362,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide text-start">
+                <div class="swiper-slide text-start p-1">
                   <h3 class="font-title color-brown-medium fw-bold">Type B</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                   <div class="plans-detail-box d-flex p-4 flex-wrap flex-md-nowrap">
@@ -399,7 +427,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide text-start">
+                <div class="swiper-slide text-start p-1">
                   <h3 class="font-title color-brown-medium fw-bold">Type C</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                   <div class="plans-detail-box d-flex p-4 flex-wrap flex-md-nowrap">

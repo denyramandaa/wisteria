@@ -1,5 +1,28 @@
 (function () {
   $(document).ready(function() {
+    function initSwiperJumbroton() {
+      let swiper = new Swiper(".jumbotronSwiper", {
+        effect: "fade",
+        speed: 1000,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        followFinger: false,
+        loop: true,
+        navigation: {
+          nextEl: ".jumbotronSwiper--next"
+        },
+        breakpoints: {
+          // 640: {
+          //   effect: "slides",
+          //   slidesPerView: 1.2,
+          //   spaceBetween: 20,
+          //   loop: false,
+          // }
+        }
+      });
+    }
+
     function initSwiperPlans() {
       let swiperPlans = new Swiper(".plansSwiper", {
         effect: "coverflow",
@@ -67,6 +90,6 @@
     })
 
     initSwiperPlans();
-    
+    initSwiperJumbroton();
   })
 }(jQuery));
