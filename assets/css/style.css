@@ -161,7 +161,12 @@ button {
   border-radius: 4px;
   border: 1px solid #95785E;
 }
-
+.plans {
+  overflow: hidden;
+}
+.plansSwiper {
+  overflow: visible;
+}
 .book-form select {
   background-color: #fff;
   font-size: 16px;
