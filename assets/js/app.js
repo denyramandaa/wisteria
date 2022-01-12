@@ -63,34 +63,55 @@
       });
     }
 
+
+    function initSwiperFacilities() {
+      let swiperFacilities = new Swiper(".facilitiesSwiper", {
+        effect: "slide",
+        grabCursor: true,
+        centeredSlides: false,
+        slidesPerView: 1.5,
+        followFinger: false,
+        watchOverflow: true,
+        spaceBetween: 20,
+        loop: false,
+      });
+    }
+    
     function initSwiperPlans() {
       let swiperPlans = new Swiper(".plansSwiper", {
         effect: "coverflow",
         grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 1.5,
+        centeredSlides: false,
+        slidesPerView: 1.15,
         followFinger: false,
-        watchOverflow: true,
-        spaceBetween: 200,
-        loop: false,
+        watchOverflow: false,
+        spaceBetween: 15,
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
-          depth: 300,
+          depth: 0,
           modifier: 1,
-          slideShadows: false
+          slideShadows: true
         },
+        loop: false,
         navigation: {
           nextEl: ".plansSwiper--next",
           prevEl: ".plansSwiper--prev",
         },
         breakpoints: {
-          // 640: {
-          //   effect: "slides",
-          //   slidesPerView: 1.2,
-          //   spaceBetween: 20,
-          //   loop: false,
-          // }
+          768: {
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 300,
+              modifier: 1,
+              slideShadows: false
+            },
+            centeredSlides: true,
+            slidesPerView: 1.5,
+            loop: true,
+            spaceBetween: 200,
+          }
         }
       });
 
@@ -138,5 +159,6 @@
     initSwiperPlans();
     initSwiperJumbroton();
     initSwiperLocation();
+    initSwiperFacilities();
   })
 }(jQuery));

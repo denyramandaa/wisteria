@@ -58,11 +58,15 @@ img {
 .h-fit-content {
   height: fit-content;
 }
-
+.font-20 {
+  font-size: 16px;
+}
 .dropdown-menu {
   top: 20px !important;
 }
-
+button {
+  border: 0 !important;
+}
 .dropdown-toggle {
   font-size: 16px;
   background-image: url('../img/arr-bottom.png');
@@ -92,6 +96,7 @@ img {
   padding-bottom: 56.25%;
   background-size: cover;
   background-position: center;
+  border-radius: 4px;
 }
 
 .background-img-ratio-jumbotron {
@@ -242,5 +247,9 @@ img {
   
   .pb-6 {
     padding-bottom: 32px;
+  }
+  
+  .font-20 {
+    font-size: 20px;
   }
 }
