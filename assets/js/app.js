@@ -1,5 +1,6 @@
 (function () {
   $(document).ready(function() {
+    console.log('run')
     function initSwiperJumbroton() {
       let swiper = new Swiper(".jumbotronSwiper", {
         effect: "fade",
@@ -19,6 +20,45 @@
           //   spaceBetween: 20,
           //   loop: false,
           // }
+        }
+      });
+    }
+
+    function initSwiperLocation() {
+      let swiper = new Swiper(".locationSwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1.2,
+        followFinger: false,
+        watchOverflow: false,
+        spaceBetween: 20,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 1,
+          slideShadows: true
+        },
+        loop: false,
+        navigation: {
+          nextEl: ".locationSwiper--next",
+          prevEl: ".locationSwiper--prev",
+        },
+        breakpoints: {
+          768: {
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 300,
+              modifier: 1,
+              slideShadows: false
+            },
+            centeredSlides: true,
+            slidesPerView: 1.5,
+            loop: true,
+            spaceBetween: 200,
+          }
         }
       });
     }
@@ -59,7 +99,7 @@
         slidesPerView: 1,
         followFinger: false,
         watchOverflow: true,
-        loop: true,
+        loop: false,
         allowTouchMove: false,
         noSwiping: true
       });
@@ -68,7 +108,7 @@
         slidesPerView: 1,
         followFinger: false,
         watchOverflow: true,
-        loop: true,
+        loop: false,
         allowTouchMove: false,
         noSwiping: true
       });
@@ -85,11 +125,18 @@
     let sidebarStatus = false
     $('.burger-button').click(() => {
         sidebarStatus ? $('.sidebar').removeClass('show') : $('.sidebar').addClass('show');
-        console.log('anjing')
         sidebarStatus=!sidebarStatus
+    })
+
+    $('.background-thumb-ratio').click(function() {
+      const idx = parseInt($(this).parents('.swiper-slide').attr('data-idx'))
+      const img = $(this).attr("data-img")
+      const elm = $(this).parents('.plans').find(".plansSwiper .swiper-wrapper .swiper-slide").eq(idx)
+      elm.find('.background-img-ratio').css('background-image','url('+ img +')')
     })
 
     initSwiperPlans();
     initSwiperJumbroton();
+    initSwiperLocation();
   })
 }(jQuery));
