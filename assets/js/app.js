@@ -60,7 +60,16 @@
             spaceBetween: 90,
           },
           991 : {
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 300,
+              modifier: 1,
+              slideShadows: false
+            },
+            centeredSlides: true,
             spaceBetween: 200,
+            loop: true,
             slidesPerView: 1.5,
           }
         }
@@ -77,7 +86,10 @@
         followFinger: false,
         watchOverflow: true,
         spaceBetween: 20,
-        loop: false,
+        loop: true,
+        navigation: {
+          nextEl: ".facilitiesSwiper--next"
+        },
       });
     }
 
@@ -139,7 +151,16 @@
             spaceBetween: 90,
           },
           991 : {
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 300,
+              modifier: 1,
+              slideShadows: false
+            },
+            centeredSlides: true,
             spaceBetween: 200,
+            loop: false,
             slidesPerView: 1.5,
           }
         }
