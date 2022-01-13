@@ -690,7 +690,7 @@
               </div>
             </div>
             <div class="col-md-3 d-flex justify-content-center align-items-center">
-              <button class="col-11 col-md-auto btn-brown text-light py-2 px-5 cursor-pointer text-center">Click Here</button>
+              <button class="col-11 col-md-auto btn-brown text-light py-2 px-5 cursor-pointer text-center open-modal">Click Here</button>
             </div>
           </div>
         </section>
@@ -857,7 +857,47 @@
         <!-- FOOTER -->
 
         <button class="wa-floating"></button>
-        <button class="brochure-floating">Download Brochure</button>
+        <button class="brochure-floating open-modal">Download Brochure</button>
+
+        <div class="download-brochure-panel text-center hide">
+          <div class="download-brochure-panel--overlay close-modal"></div>
+          <div class="download-brochure-panel--inner position-relative">
+            <h3 class="font-title color-brown-medium text-center">Download Brochure</h3>
+            <p class="text-center">You can download brochure once you fill in the inquiry requirements.</p>
+            <form>
+              <div class="mb-3 text-start">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="phonenumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phonenumber">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="how" class="form-label">How do you know us</label>
+                <select placeholder="Date" class="form-control" id="how">
+                  <option value="" disabled selected>Date</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I Agree to Keppel Land Term And Conditions and Privacy Notice has important information on what data we collect and how we may use it, including for purposes of data analytics.</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">I consent to be called and agree to receive lastest updates on Keppel Land projects (eg. Promotional offers, invitation to launches / events) through my contact information above.</label>
+              </div>
+              <button type="submit" class="btn mt-4 btn-brown text-light py-1 px-5 cursor-pointer text-center">Download</button>
+            </form>
+          </div>
+        </div>
     </div>
 	<script
 	src="https://code.jquery.com/jquery-3.6.0.min.js"

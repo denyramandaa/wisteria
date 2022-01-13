@@ -185,7 +185,7 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.book-form select {
+select {
   background-color: #fff;
   font-size: 16px;
   background-image: url('../img/arr-bottom.png');
@@ -218,12 +218,14 @@ button {
   background-color:#95785E1A;
   z-index: -1;
 }
-
+.form-check-input:checked {
+  background-color: #6f5946;
+  border-color: #6f5946;
+}
 .box-left {
   position: relative;
   padding: 32px;
 }
-
 .box-right:before {
   content: "";
   position: absolute;
@@ -312,6 +314,49 @@ button {
 .facilitiesSwiper--next {
   top: 45%;
   right: 22%;
+}
+.download-brochure-panel {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1030;
+}
+.download-brochure-panel--overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5)
+  
+}
+.download-brochure-panel--inner {
+  max-height: 85vh;
+  overflow-y: scroll;
+  width: 90%;
+  max-width: 520px;
+  background-color: #F6F3F1;
+  padding: 24px;
+}
+.download-brochure-panel label {
+  text-align: left;
+  color: #95785E;
+}
+.download-brochure-panel .form-check label {
+  color: #333333;
+}
+
+.hide {
+  display: none;
+}
+.download-brochure-panel input, .download-brochure-panel select {
+ border: 1px solid #95785E;
+ border-radius: 4px;
 }
 @media (min-width: 760px) {
   .btn-swiper-prev, .btn-swiper-next {

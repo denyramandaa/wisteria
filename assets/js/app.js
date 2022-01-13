@@ -207,6 +207,13 @@
       elm.find('.background-img-ratio').css('background-image','url('+ img +')')
     })
 
+    $('.close-modal').click(function() {
+      $('.download-brochure-panel').css('display', 'none');
+    });
+    $('.open-modal').click(function() {
+      $('.download-brochure-panel').css('display', 'flex');
+    });
+
     initSwiperPlans();
     initSwiperJumbroton();
     initSwiperLocation();
