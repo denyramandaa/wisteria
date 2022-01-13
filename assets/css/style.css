@@ -30,10 +30,12 @@ img {
   max-height: 100vh;
   overflow-x: hidden;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.5);
 }
 .sidebar.show {
+  transition: transform .4s cubic-bezier(.46,.54,.17,1), background-color .2s linear;
+  transition-delay: 0s, .3s;
   transform: translateX(0%);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-brown-default {
@@ -167,6 +169,21 @@ button {
 .plansSwiper {
   overflow: visible;
 }
+.virtual-tour {
+  background-image: url('../img/vr-tour.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.virtual-tour::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .book-form select {
   background-color: #fff;
   font-size: 16px;
@@ -177,7 +194,19 @@ button {
   color: #999;
   background-size: 12px;
 }
-
+.virtual-tour-button {
+  width: 72px;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  cursor: pointer;
+  background-size: 24px 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-add.png");
+  border: 2px solid #95785E !important;
+  border-radius: 100%;
+}
 .box-left:before {
   content: "";
   position: absolute;
@@ -209,8 +238,57 @@ button {
   position: relative;
   padding: 32px;
 }
-
+.testimony--imageBg {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.swiper-testimony-pag {
+  position: relative;
+  bottom: 0;
+  margin-top: 64px;
+}
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
+.swiper-pagination-bullet-active {
+  background: #95785E;
+}
+.container {
+  width: 100%;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: initial;
+  color: initial;
+}
+.dropdown-item.active, .dropdown-item:active {
+  text-decoration: none;
+  background-color: initial;
+  color: initial;
+}
+.nav-link.color-brown-medium:focus, .nav-link.color-brown-medium:hover {
+  color: #95785E;
+}
+.border-bottom-brown {
+  border-bottom: 1px solid #95785E;
+}
+.custom-pad {
+  padding: 16px;
+}
+.swiper-button-disabled {
+  opacity: 0;
+  cursor: none;
+}
 @media (min-width: 991px) {
+  .virtual-tour-button {
+    width: 100px;
+    height: 100px;
+  }
+  .plansSwiper {
+    overflow: hidden;
+  }
   .hang-top {
     margin-top: -85px;
     position: relative;
@@ -235,20 +313,23 @@ button {
   .box-left {
     padding: 64px 64px 0px 64px;
   }
-  
   .box-right:before {
     width: 243px;
     height: 243px;
   }
-  
   .box-right {
     padding: 64px 64px 0px 64px;
   }
-}
-@media (min-width: 992px) {
-  .pt-6 {
-    padding-top: 32px;
+  .custom-pad {
+    padding: 12px 24px 30px;
   }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 1260px;
+  }
+}
   
   .pb-6 {
     padding-bottom: 32px;

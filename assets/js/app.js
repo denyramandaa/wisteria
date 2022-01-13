@@ -55,9 +55,13 @@
               slideShadows: false
             },
             centeredSlides: true,
-            slidesPerView: 1.5,
+            slidesPerView: 1.3,
             loop: true,
+            spaceBetween: 90,
+          },
+          991 : {
             spaceBetween: 200,
+            slidesPerView: 1.5,
           }
         }
       });
@@ -74,6 +78,28 @@
         watchOverflow: true,
         spaceBetween: 20,
         loop: false,
+      });
+    }
+
+    function initSwiperTestimony() {
+      let swiperTestimony = new Swiper(".testimonySwiper", {
+        effect: "slide",
+        grabCursor: true,
+        centeredSlides: false,
+        slidesPerView: 1,
+        followFinger: false,
+        watchOverflow: true,
+        spaceBetween: 20,
+        loop: false,
+        pagination: {
+          el: ".swiper-testimony-pag",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          }
+        }
       });
     }
     
@@ -108,9 +134,13 @@
               slideShadows: false
             },
             centeredSlides: true,
-            slidesPerView: 1.5,
-            loop: true,
+            slidesPerView: 1.3,
+            loop: false,
+            spaceBetween: 90,
+          },
+          991 : {
             spaceBetween: 200,
+            slidesPerView: 1.5,
           }
         }
       });
@@ -160,5 +190,6 @@
     initSwiperJumbroton();
     initSwiperLocation();
     initSwiperFacilities();
+    initSwiperTestimony();
   })
 }(jQuery));
