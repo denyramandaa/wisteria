@@ -1,6 +1,5 @@
 (function () {
   $(document).ready(function() {
-    console.log('run')
     function initSwiperJumbroton() {
       let swiper = new Swiper(".jumbotronSwiper", {
         effect: "fade",
@@ -12,14 +11,6 @@
         loop: true,
         navigation: {
           nextEl: ".jumbotronSwiper--next"
-        },
-        breakpoints: {
-          // 640: {
-          //   effect: "slides",
-          //   slidesPerView: 1.2,
-          //   spaceBetween: 20,
-          //   loop: false,
-          // }
         }
       });
     }

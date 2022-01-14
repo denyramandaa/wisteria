@@ -6,43 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wisteria - Another Freelance Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Fixed navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <div class="app">
+        <!-- Hendy: Nyoba -->
+        <header class="w-full relative bg-brown-default">
+          <div class="container pt-6 pb-6">
+            <div class="row">
+              <div class="col-lg-5 col-3 align-items-start align-items-lg-center justify-content-start d-flex">
+                <div class="d-lg-none">
+                  <img src="assets/img/icon-burger-menu.png" style="width:20px;" alt="burger-icon" class="burger-button">
+                </div>
+                <div class="row align-items-center justify-content-end d-none d-lg-flex flex-nowrap">
+                  <div class="col-auto">
+                    <a class="color-brown-medium nav-link p-0" href="#">
+                      Concept
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="color-brown-medium nav-link p-0" href="#">
+                      Location
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="color-brown-medium nav-link p-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Plans
+                    </a>
+                    <div class="dropdown-menu bg-brown-medium px-2" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item text-white border-bottom" href="#">Plot A</a>
+                      <a class="dropdown-item text-white" href="#">Plot B</a>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <a class="color-brown-medium nav-link p-0" href="#">
+                      Facilities
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-6 justify-content-center d-flex">
+                <img src="assets/img/logo.png" style="width: 120px;" alt="logo">
+              </div>
+              <div class="col-lg-5 col-3 align-items-start align-items-lg-center justify-content-end d-flex">
+                <div class="row align-items-center justify-content-end d-none d-lg-flex flex-nowrap">
+                  <div class="col-auto">
+                    <a class="color-brown-medium nav-link p-0" href="#">
+                      Virtual Tour
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="color-brown-medium nav-link p-0" href="#">
+                      Testimony
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="color-brown-medium nav-link p-0" href="#">
+                      Contact
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto ms-4">
+                  <a class="color-brown-medium nav-link p-0 dropdown-toggle" href="#" role="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    En
+                  </a>
+                  <div class="dropdown-menu bg-brown-medium px-2" aria-labelledby="langDropdown">
+                    <a class="dropdown-item text-white border-bottom" href="#">En</a>
+                    <a class="dropdown-item text-white" href="#">Id</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar d-lg-none position-fixed d-flex">
+              <div class="p-4 bg-brown-lite col-9 justify-content-between d-flex flex-wrap min-vh-100 overflow-auto">
+                <div class="col-12">
+                  <div class="py-3 d-flex justify-content-center">
+                    <img src="assets/img/logo.png" style="width:96px" alt="logo">
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="color-brown-medium font-weight-bold text-decoration-none">Concept</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="color-brown-medium font-weight-bold text-decoration-none">Location</a>
+                  </div>
+                  <div>
+                    <a class="color-brown-medium py-3 p-0 dropdown-toggle nav-link font-weight-bold d-flex align-items-center justify-content-between text-decoration-none border-bottom" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div>
+                        Plans
+                      </div>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="py-3 ms-3 border-bottom">
+                        <a href="#" class="color-brown-medium text-decoration-none text-sm">Plan A</a>
+                      </div>
+                      <div class="py-3 ms-3 border-bottom">
+                        <a href="#" class="color-brown-medium text-decoration-none text-sm">Plan B</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3 border-bottom ">
+                    <a href="#" class="color-brown-medium font-weight-bold text-decoration-none">Facilities</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="color-brown-medium font-weight-bold text-decoration-none">Virtual Tour</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="color-brown-medium font-weight-bold text-decoration-none">Testimony</a>
+                  </div>
+                  <div class="py-3 border-top">
+                    <a href="#" class="color-brown-medium font-weight-bold text-decoration-none">Contact</a>
+                  </div>
+                </div>
+                <div class="col-12 color-brown-medium font-weight-bold">
+                  <div>
+                    Follow Us
+                  </div>
+                  <div class="pt-2 row">
+                    <img src="assets/img/icon-fb.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-web.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-ig.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-yt.png" class="rounded-circle col-3" alt="facebook">
+                  </div>
+                </div>
+              </div>
+              <div class="px-4 h-100 col-3 burger-button bg-transparent">
+            </div>
           </div>
-        </div>
-      </nav>
-
-        <!-- start here -->
+        </header>
+        <section class="virtual-tour-gallery">
+          <div class="swiper vrSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-2.jpg');"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-3.jpg');"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-4.jpg');"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-5.jpg');"></div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-swiper-prev vrSwiper--prev position-absolute d-none d-md-block"><div class="plansSwiper--line position-relative h-100"></div></div>
+          <div class="btn-swiper-next vrSwiper--next position-absolute d-none d-md-block"><div class="plansSwiper--line position-relative h-100"></div></div>
+          <div class="vr-menu">
+            <select placeholder="Date" class="form-control" id="how">
+              <option value="" disabled="" selected="">Plot A</option>
+              <option>Test</option>
+              <option>Test</option>
+              <option>Test</option>
+            </select>
+          </div>
+        </section>
+        <section class="w-100 py-3 bg-white">
+          <div class="px-2 px-md-0 d-flex col-12 col-md-10 mx-auto justify-content-between">
+            <div class="col-3 col-md-9 d-flex align-items-center">
+              <div class="col-md-2">
+                <img src="assets/img/download-brochure-img.png" alt="download brochure alt">
+              </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-end align-items-center">
+              <div class="vr-button me-3">
+                <img src="assets/img/vr-view.png" alt="vr icon view">
+              </div>
+              <div class="vr-button me-3">
+                <img src="assets/img/vr-sound.png" alt="vr icon sound">
+              </div>
+              <div class="vr-button">
+                <img src="assets/img/vr-fullscreen.png" alt="vr icon fullscreen">
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
 	<script
 	src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 	crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="assets/js/vr.js"></script>
 </body>
 </html>
