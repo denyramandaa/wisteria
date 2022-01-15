@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisteria - Another Freelance Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Hendy: Nyoba -->
+        <header class="w-full fixed-top bg-blue-default">
+          <div class="container pt-6 pb-6">
+            <div class="row">
+              <div class="col-lg-5 col-3 align-items-start align-items-lg-center justify-content-start d-flex">
+                <div class="d-lg-none">
+                  <img src="assets/img/icon-burger-menu.png" style="width:20px;" alt="burger-icon" class="burger-button">
+                </div>
+                <div class="row align-items-center justify-content-end d-none d-lg-flex flex-nowrap">
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Concept
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Virtual Tour
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Location
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Testimony
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-6 justify-content-center d-flex">
+                <img src="assets/img/logo.png" style="width: 120px;" alt="logo">
+              </div>
+              <div class="col-lg-5 col-3 align-items-start align-items-lg-center justify-content-end d-flex">
+                <div class="row align-items-center justify-content-end d-none d-lg-flex flex-nowrap">
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Plans
+                    </a>
+                    <div class="dropdown-menu bg-blue-medium px-2" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item text-white border-bottom" href="#">Plot A</a>
+                      <a class="dropdown-item text-white" href="#">Plot B</a>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Facilites
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a class="text-white nav-link p-0" href="#">
+                      Contact
+                    </a>
+                  </div>
+                </div>
+                <div class="col-auto ms-4">
+                  <a class="text-white nav-link p-0 dropdown-toggle" href="#" role="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    En
+                  </a>
+                  <div class="dropdown-menu bg-blue-medium px-2" aria-labelledby="langDropdown">
+                    <a class="dropdown-item text-white border-bottom" href="#">En</a>
+                    <a class="dropdown-item text-white" href="#">Id</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar d-lg-none position-fixed d-flex">
+              <div class="p-4 bg-brown-lite col-9 justify-content-between d-flex flex-wrap min-vh-100 overflow-auto">
+                <div class="col-12">
+                  <div class="py-3 d-flex justify-content-center">
+                    <img src="assets/img/logo.png" style="width:96px" alt="logo">
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-white font-weight-bold text-decoration-none">Concept</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-white font-weight-bold text-decoration-none">Location</a>
+                  </div>
+                  <div>
+                    <a class="text-white py-3 p-0 dropdown-toggle nav-link font-weight-bold d-flex align-items-center justify-content-between text-decoration-none border-bottom" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div>
+                        Plans
+                      </div>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                      <div class="py-3 ms-3 border-bottom">
+                        <a href="#" class="text-white text-decoration-none text-sm">Plan A</a>
+                      </div>
+                      <div class="py-3 ms-3 border-bottom">
+                        <a href="#" class="text-white text-decoration-none text-sm">Plan B</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3 border-bottom ">
+                    <a href="#" class="text-white font-weight-bold text-decoration-none">Facilities</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-white font-weight-bold text-decoration-none">Virtual Tour</a>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <a href="#" class="text-white font-weight-bold text-decoration-none">Testimony</a>
+                  </div>
+                  <div class="py-3 border-top">
+                    <a href="#" class="text-white font-weight-bold text-decoration-none">Contact</a>
+                  </div>
+                </div>
+                <div class="col-12 text-white font-weight-bold">
+                  <div>
+                    Follow Us
+                  </div>
+                  <div class="pt-2 row">
+                    <img src="assets/img/icon-fb.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-web.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-ig.png" class="rounded-circle col-3" alt="facebook">
+                    <img src="assets/img/icon-yt.png" class="rounded-circle col-3" alt="facebook">
+                  </div>
+                </div>
+              </div>
+              <div class="px-4 h-100 col-3 burger-button bg-transparent">
+            </div>
+          </div>
+        </header>
+
+        <!-- JUMBOTRON -->
+        <section class="mb-5">
+          <section class="col-12 mx-auto position-relative mh-100">
+            <div class="swiper jumbotronSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-2.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-3.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-4.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="background-img-ratio-jumbotron" style="background-image: url('https://swiperjs.com/demos/images/nature-5.jpg');"></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-block position-absolute top-0 w-100 h-100" style="z-index:1;">
+              <div class="d-flex w-100 h-100">
+                <div class="col-md-6 d-flex align-items-center" style="background:linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);">
+                  <div class="py-5 px-5 col-12 col-lg-6">
+                    <div class="text-center text-md-start">
+                      <img src="assets/img/logo-w.png" style="width:120px;" class="pb-6" alt="w">
+                    </div>
+                    <div class="fs-2 pb-3 text-center text-md-start text-white font-title">
+                      Home is where love, hope, and dreams starts
+                    </div>
+                    <div class="text-center text-md-start text-white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 d-none d-md-flex">
+                  <div class="btn-swiper-next jumbotronSwiper--next position-absolute d-none d-md-block"><div class="jumbotronSwiper--line position-relative h-100"></div></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- JUMBOTRON -->
+
+        <!-- BOOK A TOUR -->
+        <section class="container hang-top mb-5">
+          <div class="col-lg-10 col-12 bg-blue-default rounded-3 mx-lg-auto w-100 custom-pad position-relative">
+            <div class="text-center pb-2 text-white text-bold">Book a Tour</div>
+            <div class="d-lg-flex d-block justify-content-between">
+              <div class="mb-3 mb-lg-0 mx-lg-2 w-100 book-form">
+                <input type="text" placeholder="Name" class="p-2 w-100 h-100 rounded-2 border-0 form-control">
+              </div>
+              <div class="mb-3 mb-lg-0 mx-lg-2 w-100 book-form">
+                <input type="text" placeholder="Phone Number" class="p-2 w-100 h-100 rounded-2 border-0 form-control">
+              </div>
+              <div class="mb-3 mb-lg-0 mx-lg-2 w-100 book-form">
+                <input type="text" placeholder="Email" class="p-2 w-100 h-100 rounded-2 border-0">
+              </div>
+              <div class="mb-3 mb-lg-0 mx-lg-2 w-100 book-form">
+                <select placeholder="Date" class="p-2 w-100 h-100 rounded-2 border-0 form-control">
+                  <option value="" disabled selected>Date</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                </select>
+              </div>
+              <div class="mb-3 mb-lg-0 mx-lg-2 w-100 book-form">
+                <select placeholder="Date" class="p-2 w-100 h-100 rounded-2 border-0 form-control">
+                  <option value="" disabled selected>Time</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                </select>
+              </div>
+            </div>
+            <div class="floating-button-bottom">
+              <button class="col-11 col-md-auto btn-copper-red text-light py-2 px-5 cursor-pointer text-center">Submit</button>
+            </div>
+          </div>
+        </section>
+        <!-- BOOK A TOUR -->
+
+        <!-- CONCEPT -->
+        <section class="mb-5 w-100 pt-5">
+          <section class="col-12 col-md-6 text-center px-3 px-md-0 mx-auto mb-3">
+            <h2 class="font-title color-copper-red-medium fw-bold">CONCEPT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
+          </section>
+          <section class="col-12 position-relative box-left d-lg-flex d-block">
+            <div class="col-lg-6 col-12 w-full">
+              <div class="me-lg-4 rounded-2" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg'); padding-bottom: 56.25%;"></div>
+            </div>
+            <div class="col-lg-6 col-12 px-lg-4 d-flex justify-content-center align-items-center">
+              <div class="p-md-5 pt-4">
+                <h4 class="font-title color-copper-red-medium fw-bold mb-4 mb-md-3">Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
+              </div>
+            </div>
+          </section>
+          <section class="col-12 position-relative box-right d-flex flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 col-12 px-lg-4 d-flex justify-content-center align-items-center">
+              <div class="p-md-5 pt-4">
+                <h4 class="font-title color-copper-red-medium fw-bold mb-4 mb-md-3">Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="ms-lg-4 rounded-2" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg'); padding-bottom: 56.25%;"></div>
+            </div>
+          </section>
+        </section>
+        <!-- CONCEPT -->
+
+        <!-- VIRTUAL TOUR -->
+        <section class="py-5 w-100 virtual-tour">
+          <div class="py-5 text-white text-center col-12 col-md-6 mx-auto position-relative px-2">
+            <h2 class="font-title fw-bold mb-3">VIRTUAL TOUR</h2>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate.</p>
+            <a class="virtual-tour-button" href="virtual-tour.html"></a>
+          </div>
+        </section>
+        <!-- VIRTUAL TOUR -->
+
+        <!-- LOCATION -->
+        <section class="">
+          <section class="col-12 bg-blue-default pb-5">
+            <div class="col-12 col-md-6 text-center px-3 mx-auto py-5">
+              <h2 class="font-title color-copper-red-medium fw-bold">LOCATION</h2>
+              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
+            </div>
+            <div class="d-lg-flex">
+              <div class="col-12 col-lg-7 px-lg-5">
+                <img src="assets/img/maps.png" class="mb-5" alt="">
+                <div class="w-100">
+                  <button class="bg-white rounded-3 p-2 px-3 mx-auto text-center d-flex justify-content-between align-items-center"  style="width: 266px;">
+                    <img src="assets/img/logo-google-maps.png" style="width: 20px;" alt="">
+                    <span>
+                      Open with Google Maps
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5 p-5">
+                <div class="text-white w-100 legend-detail-box p-4" style="background: rgba(0, 0, 0, 0.25);">
+                  <h4 class="font-title color-copper-red-medium fw-bold mb-4">Legend</h2>
+                  <div>
+                    <div class="mb-3">
+                      <img src="assets/img/icon-mrt-line.png" style="width: 80px;" alt="">
+                      <span class="ps-3">
+                        Future MRT line
+                      </span>
+                    </div>
+                    <div class="mb-3">
+                      <img src="assets/img/icon-lrt-line.png" style="width: 80px;" alt="">
+                      <span class="ps-3">
+                        Future LRT line
+                      </span>
+                    </div>
+                    <div class="mb-3">
+                      <img src="assets/img/logo-elevated-toll.png" style="width: 80px;" alt="">
+                      <span class="ps-3">
+                        Future elevated inner toll road
+                      </span>
+                    </div>
+                    <div class="mb-3">
+                      <img src="assets/img/logo-road.png" style="width: 80px;" alt="">
+                      <span class="ps-3">
+                        Road
+                      </span>
+                    </div>
+                    <div class="mb-3">
+                      <img src="assets/img/logo-toll-road.png" style="width: 80px;" alt="">
+                      <span class="ps-3">
+                        Toll Road
+                      </span>
+                    </div>
+                  </div>
+                  <h4 class="font-title color-copper-red-medium fw-bold mb-4">Approximately</h2>
+                  <div>
+                    <div class="mb-3">
+                      <span>
+                        30 Menit
+                      </span>
+                      <span class="ps-3">
+                        Semanggi
+                      </span>
+                    </div>
+                    <div class="mb-3">
+                      <span>
+                        60 Menit
+                      </span>
+                      <span class="ps-3">
+                        Soekarno-Hatta International Airport
+                      </span>
+                    </div>
+                    <div>
+                      <span>
+                        15 Menit
+                      </span>
+                      <span class="ps-3">
+                        Toll Exit
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- LOCATION -->
+
+        <!-- TESTIMONY -->
+        <section class="plans w-100 py-5 bg-white">
+          <section class="col-12 col-md-6 text-center px-3 px-md-0 mx-auto mb-3 mb-md-5">
+            <h2 class="font-title color-copper-red-medium fw-bold">TESTIMONY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate.</p>
+          </section>
+          <section class="col-12 col-md-11 px-3 px-md-0 mx-auto position-relative mb-3 mb-md-4">
+            <div class="swiper testimonySwiper text-center text-lg-start">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="testimony--image col-4 mx-auto mb-3 mb-lg-0">
+                      <div class="testimony--imageBg rounded-circle" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                    </div>
+                    <div class="col-12 col-lg-8 ps-lg-4">
+                      <h4 class="color-copper-red-medium fw-bold">Laura Basuki</h4>
+                      <p>Lorem ipsum dolor sit amet, </p>
+                    </div>
+                  </div>
+                  <div class="fw-bold pt-1 pt-md-2 pt-lg-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam eu eu, neque leo orci diam viverra sit. Enim, ullamcorper est feugiat mauris, nibh eu cursus nulla”.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="testimony--image col-4 mx-auto mb-3 mb-lg-0">
+                      <div class="testimony--imageBg rounded-circle" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                    </div>
+                    <div class="col-12 col-lg-8 ps-lg-4">
+                      <h4 class="color-copper-red-medium fw-bold">Laura Basuki</h4>
+                      <p>Lorem ipsum dolor sit amet, </p>
+                    </div>
+                  </div>
+                  <div class="fw-bold pt-1 pt-md-2 pt-lg-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam eu eu, neque leo orci diam viverra sit. Enim, ullamcorper est feugiat mauris, nibh eu cursus nulla”.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="testimony--image col-4 mx-auto mb-3 mb-lg-0">
+                      <div class="testimony--imageBg rounded-circle" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                    </div>
+                    <div class="col-12 col-lg-8 ps-lg-4">
+                      <h4 class="color-copper-red-medium fw-bold">Laura Basuki</h4>
+                      <p>Lorem ipsum dolor sit amet, </p>
+                    </div>
+                  </div>
+                  <div class="fw-bold pt-1 pt-md-2 pt-lg-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam eu eu, neque leo orci diam viverra sit. Enim, ullamcorper est feugiat mauris, nibh eu cursus nulla”.
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="d-flex flex-wrap align-items-center">
+                    <div class="testimony--image col-4 mx-auto mb-3 mb-lg-0">
+                      <div class="testimony--imageBg rounded-circle" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                    </div>
+                    <div class="col-12 col-lg-8 ps-lg-4">
+                      <h4 class="color-copper-red-medium fw-bold">Laura Basuki</h4>
+                      <p>Lorem ipsum dolor sit amet, </p>
+                    </div>
+                  </div>
+                  <div class="fw-bold pt-1 pt-md-2 pt-lg-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam eu eu, neque leo orci diam viverra sit. Enim, ullamcorper est feugiat mauris, nibh eu cursus nulla”.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-testimony-pag"></div>
+            </div>
+          </section>
+        </section>
+        <!-- TESTIMONY -->
+
+        <!-- PLANS -->
+        <section class="plans w-100 pt-md-5">
+          <section class="col-12 col-md-6 text-center px-3 px-md-0 mx-auto mb-5">
+            <h2 class="font-title color-copper-red-medium fw-bold">PLANS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
+          </section>
+          <div class="filterTab d-flex justify-content-center px-4 px-md-0">
+            <div class="filterTab--menu col-4 active" data-tab=0>
+              Type A
+            </div>
+            <div class="filterTab--menu col-4" data-tab=1>
+              Type B
+            </div>
+            <div class="filterTab--menu col-4" data-tab=2>
+              Type C
+            </div>
+          </div>
+          <section class="col-12 col-md-11 text-center px-3 px-md-0 mx-auto mb-3 mb-md-5">
+            <div class="swiper plansSwiperDetail">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide text-start p-1">
+                  <div class="d-flex flex-wrap flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                      <h3 class="font-title color-copper-red-medium fw-bold">Type A</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat.</p>
+                      <div class="plans-detail-box d-flex p-4 flex-wrap">
+                        <div class="col-12 mb-4 br-bottom">
+                          <div class="mb-2">
+                            <p>7 x 12 m<span class="px-2">|</span>7 x 12,5 m</p>
+                          </div>
+                          <div class="mb-2 d-flex flex-wrap">
+                            <div class="col-12 col-md-6">
+                              <span class="fw-bold">Land Area:</span>
+                              <p><span class="color-copper-red-medium fw-bold">84</span> sqm<span class="px-2">|</span><span class="color-copper-red-medium fw-bold">87,5</span> sqm</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <span class="fw-bold">Building Area:</span>
+                              <p><span class="color-copper-red-medium fw-bold">79</span> sqm</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-4 d-flex flex-wrap">
+                          <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-bedroom.png" alt="icon-bedrooms">
+                              <p class="ps-3 fw-bold col-10 mb-0">3 Bedrooms</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-bathroom.png" alt="icon-bathroom">
+                              <p class="ps-3 fw-bold col-10 mb-0">2 Bathrooms</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-carport.png" alt="icon-carport">
+                              <p class="ps-3 fw-bold col-10 mb-0">2 Carport</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-dry-kitchen.png" alt="icon-dry-kitchen">
+                              <p class="ps-3 fw-bold col-10 mb-0">Dry Kitchen</p>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-attic.png" alt="icon-attic">
+                              <p class="ps-3 fw-bold col-10 mb-0">Attic</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-cctv.png" alt="icon-cctv">
+                              <p class="ps-3 fw-bold col-10 mb-0">CCTV</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-smart-lock.png" alt="icon-smart-lock">
+                              <p class="ps-3 fw-bold col-10 mb-0">Smart lock system</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-sky-balcony.png" alt="icon-sky-balcony">
+                              <p class="ps-3 fw-bold col-10 mb-0">Sky Balcony</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-8 ps-lg-5 slidePhotos">
+                      <div class="background-img-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                      <div class="d-flex col-12 justify-content-between justify-content-lg-start mt-4">
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');" data-img="https://swiperjs.com/demos/images/nature-1.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-2.jpg');" data-img="https://swiperjs.com/demos/images/nature-2.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-3.jpg');" data-img="https://swiperjs.com/demos/images/nature-3.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-4.jpg');" data-img="https://swiperjs.com/demos/images/nature-4.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-5.jpg');" data-img="https://swiperjs.com/demos/images/nature-5.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 site-map-line fw-bold pt-4 pb-3 mt-5 mb-2">
+                    Site Map
+                  </div>
+                  <div class="plans-map d-flex flex-wrap flex-md-nowrap justify-content-center p-2 p-md-5 mt-4 mt-md-0 col-md-7 mx-auto">
+                    <div class="col-12 col-md-6 px-2 mb-4 mb-md-0">
+                      <img src="assets/img/denah-1.png" alt="denah-1">
+                    </div>
+                    <div class="col-12 col-md-6 px-2">
+                      <img src="assets/img/denah-2.png" alt="denah-2">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-start p-1">
+                  <div class="d-flex flex-wrap flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                      <h3 class="font-title color-copper-red-medium fw-bold">Type B</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat.</p>
+                      <div class="plans-detail-box d-flex p-4 flex-wrap">
+                        <div class="col-12 mb-4 br-bottom">
+                          <div class="mb-2">
+                            <p>7 x 12 m<span class="px-2">|</span>7 x 12,5 m</p>
+                          </div>
+                          <div class="mb-2 d-flex flex-wrap">
+                            <div class="col-12 col-md-6">
+                              <span class="fw-bold">Land Area:</span>
+                              <p><span class="color-copper-red-medium fw-bold">84</span> sqm<span class="px-2">|</span><span class="color-copper-red-medium fw-bold">87,5</span> sqm</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <span class="fw-bold">Building Area:</span>
+                              <p><span class="color-copper-red-medium fw-bold">79</span> sqm</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-4 d-flex flex-wrap">
+                          <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-bedroom.png" alt="icon-bedrooms">
+                              <p class="ps-3 fw-bold col-10 mb-0">3 Bedrooms</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-bathroom.png" alt="icon-bathroom">
+                              <p class="ps-3 fw-bold col-10 mb-0">2 Bathrooms</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-carport.png" alt="icon-carport">
+                              <p class="ps-3 fw-bold col-10 mb-0">2 Carport</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-dry-kitchen.png" alt="icon-dry-kitchen">
+                              <p class="ps-3 fw-bold col-10 mb-0">Dry Kitchen</p>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-attic.png" alt="icon-attic">
+                              <p class="ps-3 fw-bold col-10 mb-0">Attic</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-cctv.png" alt="icon-cctv">
+                              <p class="ps-3 fw-bold col-10 mb-0">CCTV</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-smart-lock.png" alt="icon-smart-lock">
+                              <p class="ps-3 fw-bold col-10 mb-0">Smart lock system</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-sky-balcony.png" alt="icon-sky-balcony">
+                              <p class="ps-3 fw-bold col-10 mb-0">Sky Balcony</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-8 ps-lg-5 slidePhotos">
+                      <div class="background-img-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                      <div class="d-flex col-12 justify-content-between justify-content-lg-start mt-4">
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');" data-img="https://swiperjs.com/demos/images/nature-1.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-2.jpg');" data-img="https://swiperjs.com/demos/images/nature-2.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-3.jpg');" data-img="https://swiperjs.com/demos/images/nature-3.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-4.jpg');" data-img="https://swiperjs.com/demos/images/nature-4.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-5.jpg');" data-img="https://swiperjs.com/demos/images/nature-5.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 site-map-line fw-bold pt-4 pb-3 mt-5 mb-2">
+                    Site Map
+                  </div>
+                  <div class="plans-map d-flex flex-wrap flex-md-nowrap justify-content-center p-2 p-md-5 mt-4 mt-md-0 col-md-7 mx-auto">
+                    <div class="col-12 col-md-6 px-2 mb-4 mb-md-0">
+                      <img src="assets/img/denah-1.png" alt="denah-1">
+                    </div>
+                    <div class="col-12 col-md-6 px-2">
+                      <img src="assets/img/denah-2.png" alt="denah-2">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-start p-1">
+                  <div class="d-flex flex-wrap flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+                      <h3 class="font-title color-copper-red-medium fw-bold">Type C</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat.</p>
+                      <div class="plans-detail-box d-flex p-4 flex-wrap">
+                        <div class="col-12 mb-4 br-bottom">
+                          <div class="mb-2">
+                            <p>7 x 12 m<span class="px-2">|</span>7 x 12,5 m</p>
+                          </div>
+                          <div class="mb-2 d-flex flex-wrap">
+                            <div class="col-12 col-md-6">
+                              <span class="fw-bold">Land Area:</span>
+                              <p><span class="color-copper-red-medium fw-bold">84</span> sqm<span class="px-2">|</span><span class="color-copper-red-medium fw-bold">87,5</span> sqm</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <span class="fw-bold">Building Area:</span>
+                              <p><span class="color-copper-red-medium fw-bold">79</span> sqm</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-4 d-flex flex-wrap">
+                          <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-bedroom.png" alt="icon-bedrooms">
+                              <p class="ps-3 fw-bold col-10 mb-0">3 Bedrooms</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-bathroom.png" alt="icon-bathroom">
+                              <p class="ps-3 fw-bold col-10 mb-0">2 Bathrooms</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-carport.png" alt="icon-carport">
+                              <p class="ps-3 fw-bold col-10 mb-0">2 Carport</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-dry-kitchen.png" alt="icon-dry-kitchen">
+                              <p class="ps-3 fw-bold col-10 mb-0">Dry Kitchen</p>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-attic.png" alt="icon-attic">
+                              <p class="ps-3 fw-bold col-10 mb-0">Attic</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-cctv.png" alt="icon-cctv">
+                              <p class="ps-3 fw-bold col-10 mb-0">CCTV</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-smart-lock.png" alt="icon-smart-lock">
+                              <p class="ps-3 fw-bold col-10 mb-0">Smart lock system</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <img class="col-2 h-fit-content" src="assets/img/icon-sky-balcony.png" alt="icon-sky-balcony">
+                              <p class="ps-3 fw-bold col-10 mb-0">Sky Balcony</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-8 ps-lg-5 slidePhotos">
+                      <div class="background-img-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                      <div class="d-flex col-12 justify-content-between justify-content-lg-start mt-4">
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');" data-img="https://swiperjs.com/demos/images/nature-1.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-2.jpg');" data-img="https://swiperjs.com/demos/images/nature-2.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-3.jpg');" data-img="https://swiperjs.com/demos/images/nature-3.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0 me-md-4">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-4.jpg');" data-img="https://swiperjs.com/demos/images/nature-4.jpg"></div>
+                        </div>
+                        <div class="col-2 thumb-img p-0">
+                          <div class="background-thumb-ratio" style="background-image: url('https://swiperjs.com/demos/images/nature-5.jpg');" data-img="https://swiperjs.com/demos/images/nature-5.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 site-map-line fw-bold pt-4 pb-3 mt-5 mb-2">
+                    Site Map
+                  </div>
+                  <div class="plans-map d-flex flex-wrap flex-md-nowrap justify-content-center p-2 p-md-5 mt-4 mt-md-0 col-md-7 mx-auto">
+                    <div class="col-12 col-md-6 px-2 mb-4 mb-md-0">
+                      <img src="assets/img/denah-1.png" alt="denah-1">
+                    </div>
+                    <div class="col-12 col-md-6 px-2">
+                      <img src="assets/img/denah-2.png" alt="denah-2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- PLANS -->
+
+        <!-- FACILITIES -->
+        <section class="w-100 py-3 py-md-5 bg-blue-default">
+          <section class="col-12 col-md-11 px-3 px-md-0 mx-auto position-relative py-4 d-flex flex-wrap flex-lg-nowrap">
+            <div class="col-12 col-lg-3 mb-2 mb-md-0 text-center text-md-start">
+              <h2 class="font-title color-copper-red-medium fw-bold">FACILITIES</h2>
+              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
+            </div>
+            <div class="col-12 col-lg-9 ps-lg-4">
+                <div class="col-12 swiper facilitiesSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="background-img-ratio " style="background-image: url('https://swiperjs.com/demos/images/nature-1.jpg');"></div>
+                      <p class="text-white font-20 mt-3 mt-md-4 fw-bold mb-0">Lorem Ipsum Dolor </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="background-img-ratio " style="background-image: url('https://swiperjs.com/demos/images/nature-2.jpg');"></div>
+                      <p class="text-white font-20 mt-3 mt-md-4 fw-bold mb-0">Lorem Ipsum Dolor </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="background-img-ratio " style="background-image: url('https://swiperjs.com/demos/images/nature-3.jpg');"></div>
+                      <p class="text-white font-20 mt-3 mt-md-4 fw-bold mb-0">Lorem Ipsum Dolor </p>
+                    </div>
+                  </div>
+                  <div class="btn-swiper-next facilitiesSwiper--next position-absolute d-none d-md-block"><div class="jumbotronSwiper--line position-relative h-100"></div></div>
+                </div>
+            </div>
+          </section>
+        </section>
+        <!-- FACILITIES -->
+
+        
+        <!-- DOWNLOAD BROCHURE -->
+        <section class="w-100 py-3 bg-white">
+          <div class="d-flex col-12 col-md-10 mx-auto flex-wrap">
+            <div class="col-12 col-md-9 d-flex align-items-center flex-wrap">
+              <div class="col-11 col-md-3 mx-auto mb-3 mb-md-0">
+                <img src="assets/img/download-brochure-img.png" alt="download brochure alt">
+              </div>
+              <div class="col-11 col-md-9 ps-md-4 mx-auto mb-4 mb-md-0">
+                <h4 class="font-title color-brown-medium fw-bold mb-2">Download Brochure</h4>
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
+              <button class="col-11 col-md-auto btn-copper-red text-light py-2 px-5 cursor-pointer text-center open-modal">Click Here</button>
+            </div>
+          </div>
+        </section>
+        <!-- DOWNLOAD BROCHURE -->
+
+        <!-- CONTACT US -->
+        <section class="w-100 pt-5">
+          <section class="col-12 col-md-6 text-center px-3 px-md-0 mx-auto mb-5">
+            <h2 class="font-title color-copper-red-medium fw-bold pb-2">CONTACT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis nullam hendrerit viverra feugiat. In urna tellus habitant dapibus facilisis ultrices.</p>
+          </section>
+          <section class="col-12 col-md-8 text-center text-lg-start px-3 px-md-0 mx-auto mb-5 d-lg-flex d-block">
+            <div class="col-lg-6 col-12 px-3">
+              <input type="text" placeholder="Name" class="p-2 w-100 rounded-2 form-control plans-detail-box mb-3">
+              <input type="text" placeholder="Email" class="p-2 w-100 rounded-2 form-control plans-detail-box mb-3">
+              <input type="text" placeholder="Phone number" class="p-2 w-100 rounded-2 form-control plans-detail-box mb-3">
+            </div>
+            <div class="col-lg-6 col-12 px-3">
+              <textarea class="p-2 w-100 rounded-2 form-control plans-detail-box mb-3" rows="3" placeholder="Message"></textarea>
+              <button class="col-auto btn-copper-red text-light py-1 px-5 cursor-pointer text-center">Submit</button>
+            </div>
+          </section>
+        </section>
+        <!-- CONTACT US -->
+
+        <!-- FOOTER -->
+        <footer class="w-100 bg-white">
+          <section class="col-12 px-3 px-md-0 mx-auto position-relative">
+            <div class="py-5 d-block d-lg-flex justify-content-center">
+              <div class="col-lg-1 mb-5 mb-lg-0 px-2 px-md-4 px-lg-2 align-items-center justify-content-lg-center d-flex">
+                <img src="assets/img/logo.png" style="width:120px" alt="logo">
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0 px-2 px-md-4 ">
+                <h5 class="font-title color-copper-red-medium fw-thin mb-2">Our Location</h5>
+                <div>
+                  Jl. Rawabangsa no. 22, Jakarta Timur, Cakung.
+                </div>
+              </div>
+              <div class="col-lg-3 mb-5 mb-lg-0 px-2 px-md-4 ">
+                <h5 class="font-title color-copper-red-medium fw-thin mb-2">Subscribe to Our Newsletter</h5>
+                <div class="mb-2">
+                  We’ll keep you updated with our latest news and updates.
+                </div>
+                <div class="border-0 border-bottom border-2 d-flex">
+                  <input type="text" placeholder="Email" class="p-2 w-100 form-control border-0">
+                  <button class="col-auto cursor-pointer text-center bg-white ms-1">
+                    <img src="assets/img/arr-right-brown.png" style="width: 12px;" alt="arr-right">
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-3 px-2 px-md-4 ">
+                <h5 class="font-title color-copper-red-medium fw-thin mb-2">Social Media</h5>
+                <div class="mb-2">
+                  Follow our social media for more information.
+                </div>
+                <div class="d-flex">
+                  <img src="assets/img/icon-fb.png" style="width: 38px;" class="rounded-circle col-2 px-1" alt="facebook">
+                  <img src="assets/img/icon-web.png" style="width: 38px;" class="rounded-circle col-2 px-1" alt="facebook">
+                  <img src="assets/img/icon-ig.png" style="width: 38px;" class="rounded-circle col-2 px-1" alt="facebook">
+                  <img src="assets/img/icon-yt.png" style="width: 38px;" class="rounded-circle col-2 px-1" alt="facebook">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-blue-default px-3 px-lg-5 py-4 d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
+            <div class="d-flex flex-row flex-wrap">
+              <a href="#" class="text-white text-decoration-none pe-5 mb-3 mb-lg-0">Privacy Policy</a>
+              <a href="#" class="text-white text-decoration-none pe-5 mb-3 mb-lg-0">Terms of Services</a>
+              <a href="#" class="text-white text-decoration-none pe-5 mb-3 mb-lg-0">Whistleblower Statement</a>
+            </div>
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+              <div class="text-white pe-2 mb-3 mb-lg-0">
+                Developed By :
+              </div>
+              <div class="d-flex flex-lg-row justify-content-center">
+                <img src="assets/img/keppel-land.png" class="px-2" style="max-width:100px;" alt="keppel-land">
+                <img src="assets/img/metland.png" class="px-2" style="max-width:100px;" alt="metland">
+              </div>
+            </div>
+          </section>
+        </footer>
+        <!-- FOOTER -->
+
+        <button class="wa-floating"></button>
+        <button class="brochure-floating open-modal">Download Brochure</button>
+
+        <div class="download-brochure-panel text-center hide">
+          <div class="download-brochure-panel--overlay close-modal"></div>
+          <div class="download-brochure-panel--inner position-relative">
+            <h3 class="font-title color-copper-red-medium text-center">Download Brochure</h3>
+            <p class="text-center">You can download brochure once you fill in the inquiry requirements.</p>
+            <form>
+              <div class="mb-3 text-start">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="phonenumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phonenumber">
+              </div>
+              <div class="mb-3 text-start">
+                <label for="how" class="form-label">How do you know us</label>
+                <select placeholder="Date" class="form-control" id="how">
+                  <option value="" disabled selected>Date</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                  <option>Test</option>
+                </select>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I Agree to Keppel Land Term And Conditions and Privacy Notice has important information on what data we collect and how we may use it, including for purposes of data analytics.</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">I consent to be called and agree to receive lastest updates on Keppel Land projects (eg. Promotional offers, invitation to launches / events) through my contact information above.</label>
+              </div>
+              <button type="submit" class="btn mt-4 btn-copper-red text-light py-1 px-5 cursor-pointer text-center">Download</button>
+            </form>
+          </div>
+        </div>
+    </div>
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
