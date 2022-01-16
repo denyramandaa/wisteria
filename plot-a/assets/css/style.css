@@ -155,10 +155,20 @@ button {
   transform: translate(-100%,-50%);
 }
 
+.bg-center-cover {
+  background-size: cover;
+  background-position: center center;
+}
 .background-thumb-ratio {
   width: 100%;
   padding-bottom: 100%;
   cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.5;
+}
+.background-thumb-ratio.active {
+  opacity: 1;
 }
 .plans-detail-box {
   border-radius: 4px;

@@ -127,6 +127,7 @@
     $('.background-thumb-ratio').click(function() {
       const img = $(this).attr("data-img")
       const elm = $(this).parents('.slidePhotos').find('.background-img-ratio');
+      $(this).addClass('active').parents('.thumb-img').siblings().find('.background-thumb-ratio').removeClass('active')
       elm.css('background-image','url('+ img +')')
     })
 

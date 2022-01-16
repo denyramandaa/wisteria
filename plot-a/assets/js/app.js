@@ -195,6 +195,7 @@
       const idx = parseInt($(this).parents('.swiper-slide').attr('data-idx'))
       const img = $(this).attr("data-img")
       const elm = $(this).parents('.plans').find(".plansSwiper .swiper-wrapper .swiper-slide").eq(idx)
+      $(this).addClass('active').parents('.thumb-img').siblings().find('.background-thumb-ratio').removeClass('active')
       elm.find('.background-img-ratio').css('background-image','url('+ img +')')
     })
 
