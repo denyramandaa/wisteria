@@ -157,6 +157,8 @@
         }
       });
 
+      swiperPlans.slideTo(1);
+
       let swiperPlansThumb = new Swiper(".plansSwiperThumbnail", {
         grabCursor: true,
         slidesPerView: 1,

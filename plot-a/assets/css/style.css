@@ -18,7 +18,9 @@ img {
 .font-title {
   font-family: Didot;
 }
-
+.app {
+  overflow: hidden;
+}
 .sidebar {
   width: 100%;
   height: 100%;
@@ -173,6 +175,8 @@ button {
 .plans-detail-box {
   border-radius: 4px;
   border: 1px solid #95785E;
+  background-size: cover;
+  background-position: center;
 }
 .plans {
   overflow: hidden;
@@ -393,6 +397,12 @@ select {
   width: 42px;
   cursor: pointer;
 }
+.border-bottom-bl {
+  border-bottom: 1px solid rgba(50, 43, 42, 0.5)!important;
+}
+.border-bottom-br {
+  border-bottom: 1px solid rgba(149, 120, 94, 0.35)!important;
+}
 @media (min-width: 760px) {
   .vr-button {
     width: 56px;
@@ -409,8 +419,8 @@ select {
 @media (min-width: 991px) {
   .btn-swiper-prev, .btn-swiper-next {
     opacity: 1;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .wa-floating {
     right: 16px;

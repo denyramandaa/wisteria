@@ -204,12 +204,15 @@ button {
 select {
   background-color: #fff;
   font-size: 16px;
-  background-image: url('../img/arr-bottom.png');
+  background-image: url('../img/arr-bottom-orange.png');
   background-repeat: no-repeat;
   -webkit-appearance: none;
   background-position: 95% center;
   color: #999;
   background-size: 12px;
+}
+.app {
+  overflow: hidden;
 }
 .virtual-tour-button {
   width: 72px;
@@ -294,6 +297,12 @@ select {
 }
 .border-bottom-brown {
   border-bottom: 1px solid #c4715a;
+}
+.border-bottom-bl {
+  border-bottom: 1px solid rgba(48, 51, 70, 0.5)!important;
+}
+.border-bottom-br {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35)!important;
 }
 .custom-pad {
   padding: 16px;
@@ -442,8 +451,8 @@ select {
   }
   .btn-swiper-prev, .btn-swiper-next {
     opacity: 1;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
   .wa-floating {
     right: 16px;
