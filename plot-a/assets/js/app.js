@@ -2,7 +2,7 @@
   $(document).ready(function() {
     function initSwiperJumbroton() {
       let swiper = new Swiper(".jumbotronSwiper", {
-        effect: "fade",
+        effect: "slide",
         speed: 1000,
         grabCursor: true,
         centeredSlides: true,
@@ -11,7 +11,11 @@
         loop: true,
         navigation: {
           nextEl: ".jumbotronSwiper--next"
-        }
+        },
+        pagination: {
+          el: ".swiper-jumbotron-pag",
+          clickable: true
+        },
       });
     }
 
@@ -96,6 +100,7 @@
         loop: false,
         pagination: {
           el: ".swiper-testimony-pag",
+          clickable: true
         },
         breakpoints: {
           768: {
@@ -206,6 +211,15 @@
     });
     $('.open-modal').click(function() {
       $('.download-brochure-panel').css('display', 'flex');
+    });
+
+    $('.virtual-tour-button').click(function() {
+      $('.virtual-tour-modal').addClass('show');
+      $('html, body').css('overflowY', 'hidden'); 
+    });
+    $('.virtual-tour-pannel-close').click(function() {
+      $('.virtual-tour-modal').removeClass('show');
+      $('html, body').css('overflowY', 'auto'); 
     });
 
     initSwiperPlans();
